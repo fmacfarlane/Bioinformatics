@@ -1,0 +1,7 @@
+#script used in R to plot smoothed graph data
+>data <- scan('smoothed.txt')
+>plot(data)
+>pdf("/homes/fmacfarlane/BS32010/assignment_1/graph60.pdf")
+>plot(data)
+>dev.off()
+#this script was used to plot the graph of the smoothed data and save it as a pdf file
