@@ -1,2 +1,2 @@
-Bioinformatics
+assignments for Bioinformatics
 ==============
