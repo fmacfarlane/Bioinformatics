@@ -11,7 +11,7 @@ Part 1 files = Ringbuffer
 Part 2 files = Length
 * NC_002695.1 file was a download of the E.coli 0157 genome from the GEO website.
 * NC_002695.1.fasta was the fasta file containing the genome sequence of the E.coli 0157 genome.
-* The record_lengths.py was the Biopython script used to find the 3 longest E.coli gene sequences.
-
+* The record_lengths.py was the Biopython script used to find the 3 longest E.coli gene sequences and print the results into the longest_genes.fasta file.
+* The longest_genes.fasta file hold the 3 longest gene sequences from the E.coli 0157 genome.
 
 ==============
