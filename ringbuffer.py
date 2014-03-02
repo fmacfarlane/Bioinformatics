@@ -17,16 +17,20 @@ buffer=[]
 buffertotal=0
 position=0
 result=[]
+# The above commands fill the buffer
 while len(buffer)<buffersize:
 	buffer.append(data[position])
 	buffertotal=buffertotal+data[position]
 	position=position+1
 	result.append(float(buffertotal)/buffersize)
+# This calculates the moving average and moves on one step, and then calculates the running average.
+
 for v in range(position, len(data)):
 	buffertotal=buffertotal-buffer[v%buffersize]
 	buffer[v%buffersize]=data[v]
 	buffertotal=buffertotal+buffer[v%buffersize]
 	result.append(float(buffertotal)/buffersize)
+# This works through the rest of the data.
 print result
 # this loop creates the buffer and runs it, organising the data and printing the result
 smooth=open('smoothed.txt', 'w')
