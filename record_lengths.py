@@ -2,10 +2,14 @@
 from Bio import SeqIO
 # this imports the correct programmes in Biopython
 filename = "NC_002695.1.fasta"
-# this assigns the filename as the fasta file we are investigating
-
-for record in SeqIO.parse(filename, "fasta"):
-	if len(record) >6315: 
-		print("Record " + record.id + ", length " + str(len(record.seq)))
-# This for loop finds records with length longer than 6315 bp long and prints them along with their record id.
-# This script does find the 3 longest genes, however trial and error to find the length they must be longer than, ie. the fourth longest gene.
+outputfile = "longest_genes.fasta"
+output_handle = open(outputfile, 'w')
+# this assigns the filenames and opens a file for the result to be written in to.
+records = list(SeqIO.parse(filename, 'fasta'))
+# this puts all of the record into a list
+records.sort(cmp = lambda x,y: cmp(len(y),len(x)))
+# this sorts the list by length
+SeqIO.write(records[0:3], output_handle, 'fasta')
+# this writes the top 3 ,longest 3 , results into the outputfile
+output_handle.close()
+# we then close the outputfile.
