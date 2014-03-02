@@ -1,7 +1,12 @@
 #script used in R to plot smoothed graph data
 >data <- scan('smoothed.txt')
+#this takes the data from the smoothed text file and assigns it to the variable data
 >plot(data)
+# this plots the data points from the smoothed.txt file
 >pdf("/homes/fmacfarlane/BS32010/assignment_1/graph60.pdf")
+# this opens a pdf file called graph60
 >plot(data)
+#this plots the graph and saves it in the pdf file
 >dev.off()
+#this close the pdf file
 #this script was used to plot the graph of the smoothed data and save it as a pdf file
