@@ -1,5 +1,7 @@
-This repository hold the files used to complet assignment 1 of the Applied Bioinformatics Module
-Not all of the files have suitable commit comments as they were commited quickly, and could not be modified once committed the first time. Please refer to this readme file for a description of each of the files in this repository.
+This repository hold the files used to complete assignment 1 of the Applied Bioinformatics Module.
+
+Not all of the files have suitable commit comments as they were commited quickly, and could not be modified once committed the first time.
+Please refer to this readme file for a description of each of the files in this repository.
 
 Part 1 files = Ringbuffer
 * The signal.txt file holds the data that we want to smooth.
